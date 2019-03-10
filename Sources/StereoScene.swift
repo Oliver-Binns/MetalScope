@@ -57,7 +57,7 @@ internal final class StereoScene: SCNScene {
 
         let mesh = SCNGeometry(
             sources: [
-                SCNGeometrySource(vertices: vertices, count: vertices.count),
+                SCNGeometrySource.init(vertices: vertices),
                 SCNGeometrySource(texcoord: texcoord),
                 SCNGeometrySource(colors: colors)
             ],
